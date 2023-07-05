@@ -6,12 +6,7 @@ The detection modules utilize a rating mechanism based on different detection te
 
 The analysis and public extracted information from this OSINT tool could help investigate profiles related to suspicious or malicious activities such as cyberbullying, cyber grooming, cyberstalking, and spreading misinformation.
 
-`This project is currently used by some law enforcement agencies in countries where resources are limited`
-
-- [New] Works on nodejs v18.4.0
-- [New] Meta nested module is queued for testing   
-- [New] Updates queued for testing
-- [Info] Feel free to fork and contribute
+`This project is currently used by some law enforcement agencies in countries where resources are limited - The detection database is different than the one shared here..`
 
 ## So·cial Me·di·a
 Websites and applications that enable users to create and share content or to participate in social networking - Oxford Dictionary
@@ -73,7 +68,9 @@ sudo add-apt-repository ppa:mozillateam/ppa -y
 sudo apt-get install -y firefox-esr tesseract-ocr git nodejs npm
 git clone https://github.com/qeeqbox/social-analyzer.git
 cd social-analyzer
-npm ci
+npm update
+npm install
+npm install loadash
 npm start
 ```
 
@@ -86,6 +83,8 @@ sudo add-apt-repository ppa:mozillateam/ppa -y
 sudo apt-get install -y firefox-esr tesseract-ocr git nodejs npm
 git clone https://github.com/qeeqbox/social-analyzer.git
 cd social-analyzer
+npm install
+npm install loadash
 nodejs app.js --username "johndoe"
 #or
 nodejs app.js --username "johndoe,janedoe" --metadata
